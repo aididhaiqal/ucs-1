@@ -28,6 +28,7 @@ namespace UCS.PacketProcessing
             m_vCommands.Add("/sysmsg", typeof(SystemMessageGameOpCommand));
             m_vCommands.Add("/banchat", typeof(BanChatGameOpCommand));
             m_vCommands.Add("/sysrestart", typeof(SystemRestartMessageGameOpCommand));
+            m_vCommands.Add("/sysinfo", typeof(ServerStatusGameOpCommand));
         }
 
         public static object Parse(string command)
