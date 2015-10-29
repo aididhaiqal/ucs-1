@@ -40,7 +40,7 @@ namespace UCS.PacketProcessing
                     mail.SetAllianceId(0);
                     mail.SetAllianceBadgeData(0);
                     mail.SetAllianceName("Server Status Group");
-                    mail.SetMessage(message + "Connected Players:" + ResourcesManager.GetConnectedClients().Count + "\nMore Coming Soon");
+                    mail.SetMessage(message + "Here is our current Server Status:\nConnected Players:" + ResourcesManager.GetConnectedClients().Count + "\nIn Memory Alliances:" + ObjectManager.GetInMemoryAlliances().Count + "\nIn Memory Levels:" + ResourcesManager.GetInMemoryLevels().Count);
                     mail.SetSenderLeagueId(22);
 
                     foreach (var onlinePlayer in ResourcesManager.GetOnlinePlayers())
