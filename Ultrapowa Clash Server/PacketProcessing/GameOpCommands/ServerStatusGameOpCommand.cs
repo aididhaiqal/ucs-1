@@ -30,7 +30,7 @@ namespace UCS.PacketProcessing
                 if (m_vArgs.Length >= 1)
                 {
                     //"Established Connections: " Maybe useless
-                    string message = string.Join("Established Connections: "  + "\n", m_vArgs.Skip(1));
+                    string message = string.Join("\n", m_vArgs.Skip(1));
                     AllianceMailStreamEntry mail = new AllianceMailStreamEntry();
                     mail.SetId((int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
                     mail.SetSenderId(0);
